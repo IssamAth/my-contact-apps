@@ -1,20 +1,20 @@
 <template>
   <div class="container mx-auto">
     <!-- PERSON -->
-    <div class="flex flex-wrap justify-center lg:max-w-screen-xl">
+    <div class="container mx-auto flex flex-wrap justify-center">
       <div
         v-for="(person, index) in people"
         :key="index"
-        class="w-1/4 sm:w-1/3 md:w-1/4 lg:w-1/6 mx-2 my-2 shadow-lg rounded-md hover:shadow-2xl drop-shadow-lg"
+        class="flex flex-col   mx-2 mb-8 shadow-lg rounded-md md:h-30v h-50 hover:shadow-2xl drop-shadow-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 flex-grow hover:cursor-pointer"
       >
         <img
-          class="h-32 rounded-t-xl"
+          class="h-48 rounded-t-xl"
           :src="person.picture.large"
           :alt="`${person.name.first} ${person.name.last}`"
         />
-        <div class="h-32 p-3 flex flex-col">
-          <h2>{{ `${person.name.first} ${person.name.last}` }}</h2>
-          <p class="whitespace-normal h-full break-all">{{ person.email }}</p>
+        <div class=" h-full space-y-3 p-3 flex flex-col justify-center">
+          <h2 class="font-bold text-lg">{{ `${person.name.first} ${person.name.last}` }}</h2>
+          <p class="whitespace-normal h-full break-all text-sm text-gray-500">{{ person.email }}</p>
         </div>
       </div>
     </div>
