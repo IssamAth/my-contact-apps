@@ -1,14 +1,17 @@
 <template>
   <div id="app">
+    <Navbar />
     <RandomUserList />
   </div>
 </template>
 
 <script>
 import RandomUserList from './components/RandomUserList.vue';
+import Navbar from './components/Navbar.vue';
 
 export default {
   components: {
+    Navbar,
     RandomUserList,
   },
 };
