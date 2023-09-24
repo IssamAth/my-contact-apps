@@ -8,7 +8,7 @@
       <div class="text-4xl">
         100 Contact(s)
       </div>
-      <div class="w-40v h-full">
+      <div class=" w-2/4 h-full">
         <SearchField />
       </div>
     </div>

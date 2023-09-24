@@ -24,6 +24,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
+
 const people = ref([]);
 
 onMounted(() => {
